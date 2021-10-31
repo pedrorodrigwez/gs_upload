@@ -4,7 +4,7 @@ import os
 from pathlib import PureWindowsPath
 
 
-credentials = PureWindowsPath("paht to json")
+credentials = PureWindowsPath("path to json")
 
 
 class DevConfig:
@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.config.from_object(DevConfig)
 
 #UPLOAD_FOLDER = "uploads"
-BUCKET = "dev-hyr"
+BUCKET = "bucket_name"
 
 @app.route('/')
 def index():
